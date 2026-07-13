@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Phishing Detection</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: url('/static/images/Real-Time Resilience_ Strengthening Your Cybersecurity Against Phishing.jpg') no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      text-shadow: 1px 1px 3px #000;
+    }
+
+    input {
+      padding: 10px;
+      width: 300px;
+      border-radius: 5px;
+      border: none;
+      margin-bottom: 10px;
+    }
+
+    .button {
+      background: #a44;
+      padding: 10px 20px;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+    }
+
+    form {
+      background-color: rgba(0, 0, 0, 0.5); /* semi-transparent box */
+      padding: 20px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>URL PHISHING DETECTION SYSTEM</h1>
+
+  <form action="/check" method="POST">
+    <input type="text" name="url" placeholder="Masukkan URL" required><br>
+    <button type="submit" class="button">CHECK IT NOW</button>
+  </form>
+</body>
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <title>Phishing Detection</title>
+  <style>
+    body { font-family: Arial; background: url('/static/images/Real-Time Resilience_ Strengthening Your Cybersecurity Against Phishing.jpg') no-repeat center center/cover; color: white; text-align: center; }
+    .button { background: #a44; padding: 10px 20px; color: white; text-decoration: none; border-radius: 5px; }
+    input { padding: 10px; width: 300px; border-radius: 5px; margin-bottom: 10px; }
+  </style>
+</head>
+<body>
+     <body style="
+        background-image: url('/static/images/Real-Time Resilience_ Strengthening Your Cybersecurity Against Phishing.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        font-family: Arial;
+        color: white;
+        text-align: center;
+        ">
+  <h1>URL Phishing Detection System</h1>
+  
+
+   <form action="/check" method="POST">
+    <input type="text" name="url" placeholder="Masukkan URL" required><br>
+    <button type="submit" class="button">Check it now</button>
+  </form>
+
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Phishing Detection</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Check URL Sekarang.</h1>
+        <form action="/check" method="post">
+            <input type="text" name="url" placeholder="Enter URL" required>
+            <button type="submit">Find out</button>
+        </form>
+        {% if result %}
+            <div class="result">
+                <p><strong>Hasil:</strong> {{ result }}</p>
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Phishing Detection</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+  <header>
+    <div class="navbar">
+      <div class="logo">PHISHING DETECTION</div>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#check">Check url</a></li>
+          <li><a href="#targets">Phishing Targets</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Phishing Detection System</h1>
+      <p>Mendeteksi URL Phishing.</p>
+      <a href="#check" class="btn">Check it now</a>
+    </div>
+  </section>
+
+</body>
+</html> -->

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Phishing Detection</title>
+     <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: url('/static/images/Real-Time Resilience_ Strengthening Your Cybersecurity Against Phishing.jpg') no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      text-shadow: 1px 1px 3px #000;
+    }
+
+  </style>
+</head>
+<body>
+    <!-- <div class="container">
+        
+        {% if result %}
+            <div class="result">
+                <h1><strong>Hasil:</strong> {{ result }}</h1>
+            </div>
+        {% endif %}
+    </div> -->
+    <!-- Contoh penulisan di dalam result.html -->
+<div class="result-container">
+    <h1>HASIL ANALISIS UNTUK URL:</h1>
+    <!-- Ini adalah cara menampilkan URL yang sedang dites -->
+    <h3><p class="tested-url"><strong>{{ url }}</strong></p> </h3>
+    
+    <hr>
+    
+    <!-- <h1>Kesimpulan:</h1> -->
+    <h1><p class="prediction-result">{{ result }}</p></h1>
+    
+    <h2><a href="/" class="btn-back">Uji URL Lain</a></h2>
+</div>
+</body>
+</html>
